@@ -6,7 +6,19 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: appBar());
+    return Scaffold(
+      appBar: appBar(), 
+      body: Column(
+        children: [
+          child:TextField(
+            Decoration:InputDecoration(
+              filled:true,
+              fillColor:colors.white
+            )
+          )
+        ],
+      ),
+    );
   }
 
   AppBar appBar() {
